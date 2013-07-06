@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	    <meta charset="utf-8">
+	    <title>Bootstrap typehead with options example by w3resource</title>
+	    <link href="./typehead/bootstrap.css" rel="stylesheet" type="text/css">
+		<style type="text/css"></style><style type="text/css"></style>
+	</head>
+	
+
+	<body>
+		
+		<div class="well">
+			<input type="text" class="span3" id="search" data-provide="typeahead" data-items="4">
+		</div>
+		<script src="./typehead/jquery.js"></script>
+		<script src="./typehead/bootstrap-typeahead.js"></script>
+		<script>
+		 var subjects = ['PHP', 'MySQL', 'SQL', 'PostgreSQL', 'HTML', 'CSS', 'HTML5', 'CSS3', 'JSON']; 
+		$('#search').typeahead({source: subjects})
+		</script><ul class="typeahead dropdown-menu"></ul>
+
+		<div class="well">
+		<input type="text" class="span3" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Ahmedabad&quot;,&quot;Akola&quot;,&quot;Asansol&quot;,&quot;Aurangabad&quot;,&quot;Bangaluru&quot;,&quot;Baroda&quot;,&quot;Belgaon&quot;,&quot;Berhumpur&quot;,&quot;Calicut&quot;,&quot;Chennai&quot;,&quot;Chapra&quot;,&quot;Cherapunji&quot;]">
+		</div>
+		
+		<ul class="typeahead dropdown-menu" style="top: 48px; left: 20px; display: none;"><li data-value="Berhumpur" class="active"><a href="http://www.w3resource.com/twitter-bootstrap/example-typehead.html#">Berhum<strong>p</strong>ur</a></li><li data-value="Chapra"><a href="http://www.w3resource.com/twitter-bootstrap/example-typehead.html#">Cha<strong>p</strong>ra</a></li><li data-value="Cherapunji"><a href="http://www.w3resource.com/twitter-bootstrap/example-typehead.html#">Chera<strong>p</strong>unji</a></li></ul></body></html>
+
+	</body>
+</html>
